@@ -1,0 +1,1064 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Custom styles */
+
+.font-gilroy {
+  font-family: 'Gilroy', sans-serif;
+}
+
+.top-cus{
+  top:-121%
+}
+
+/* Styles for the icons */
+.atag {
+  @apply text-white text-xl flex absolute top-2/3 pl-20;
+  /* Add other styles for the icons */
+}
+
+.space {
+  @apply m-1;
+}
+
+/* Styles for the circular elements */
+.circle {
+  @apply w-12 h-12 rounded-full flex items-center justify-center border border-white; /* Use border utility class to create a border */
+  /* Replace with your desired border color */
+  /* Add other styles for the circles */
+}
+*{
+  margin: 0 ;
+  padding: 0 ;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+html,body{
+height: 100%;
+background-color: #E4E7EB;
+width: 100%;
+
+}
+::-webkit-scrollbar{
+display: none;
+}
+
+.main {
+  @apply  h-full w-full relative z-10  object-cover  ;
+ /* Add 'relative' positioning to the main div */
+}
+/* Global styles */
+
+
+
+
+.img{
+  @apply h-full w-full object-cover ; /* Use 'object-cover' to resize the image to fit the container */
+  position: absolute; /* Set the image to absolute positioning */
+
+  z-index: -10; /* Decrease the z-index to move it behind other elements */
+}
+
+.nav {
+  @apply h-16 w-full font-gilroy     top-0 flex tracking-wide; /* Use 'fixed' positioning to fix the navigation at the top */
+}
+
+
+  .navp {
+    @apply text-4xl   relative left-32 w-1/3 h-full m-3 opacity-60 text-white font-extralight ;
+  } 
+
+
+.navy {
+ 
+   @apply text-2xl text-white font-gilroy justify-between relative left-1 mt-4;
+}
+
+.mar {
+  @apply ml-12;
+}
+
+.btn {
+  @apply h-14 w-48 opacity-70 ml-20 border-white text-white border-2 text-2xl rounded-full flex items-center justify-center mt-2;
+}
+
+.mid {
+  @apply font-gilroy text-gray-100 text-7xl font-extralightest absolute left-36 top-48;
+}
+
+.sml {
+  @apply text-white text-2xl absolute top-2/4 pt-16 left-36 font-gilroy opacity-80;
+}
+.wide {
+  @apply  h-28 rounded-md w-4/5  relative left-48 top-2/4 mt-32 bg-custom  flex ;
+}
+.hidden{
+  @apply   h-24 w-custom rounded-md bg-indigo-950 relative left-52 top-72  -z-10
+}
+
+.check{
+  @apply h-full w-72 text-white border-r-2 border-neutral-900
+}
+
+.p1{
+  @apply relative  font-gilroy left-3 
+  top-2
+}
+.p2{
+ @apply  relative font-gilroy text-6xl top-2 left-4 font-extralight
+}
+.p3{
+  @apply   relative font-gilroy left-24 -top-12
+
+}
+.p4{
+  @apply relative font-gilroy -top-12   left-24
+}
+
+.check1{
+  @apply h-full w-72 text-white border-r-2 border-neutral-900
+}
+
+.p5{
+ @apply relative  font-gilroy left-3 
+  top-2
+}
+.p6{
+  @apply  relative font-gilroy text-6xl top-2 left-4 font-extralight
+}
+.p7{
+  @apply   relative font-gilroy left-24 -top-12
+}
+.p8{
+  @apply relative font-gilroy -top-12   left-24
+}
+.check3{
+ @apply h-full w-48 text-white border-r-2 border-neutral-900
+}
+
+.p9{
+  @apply relative left-16 top-2 text-white font-gilroy
+}
+.p10{
+  @apply relative left-8 top-2 text-white font-gilroy text-6xl
+}
+.check4{
+  @apply h-full w-48 text-white border-r-2 border-neutral-900
+}
+.p11{
+  @apply relative left-14 top-2 text-white font-gilroy 
+}
+.p12{
+  @apply relative left-8 top-2 text-white font-gilroy text-6xl
+}
+.check5{
+  @apply h-full w-72 text-white 
+}
+.btn1{
+  @apply  bg-yellow-200 h-10 w-48 opacity-70 ml-10 border-black text-black border-2 text-xs mt-10  rounded-full flex items-center justify-center ;
+}
+.circle1{
+  @apply w-10 h-10 rounded-full text-xl absolute  z-10 left-1/2 -ml-16 
+  top-20 flex  items-center justify-center border border-white bg-white text-black
+}
+.mens{
+  @apply h-14 w-14 border-white relative left-72 hidden -top-14 border-2 text-white  text-4xl rounded-full p-2
+}
+/* Your existing CSS */
+
+@media(max-width: 500px) {
+
+  
+  
+
+  .navp {
+    @apply text-5xl relative left-3 -top-2; 
+
+  }
+  
+  .navy{
+    @apply hidden 
+
+  }
+  .main{
+    height: 130%;
+  
+    width: 120vw!important;
+  }
+  .btn{
+    width: 120px;
+    height: 35px;
+  
+  position: relative; 
+  opacity: .6;
+  left: -5%;
+  top: 4%;
+    font-size: 20px
+  }
+  .mens{
+
+    display: block;
+  opacity: .6;
+    height: 40px;
+    border-radius: 50%;
+    width: 40px; font-size: 20px;
+    top: -53%; 
+    background-color: transparent;
+    position: relative;
+  left: 109%;
+  }
+  
+  .atag{
+top: 50%;
+left: -10%;
+position: absolute;
+
+    
+  }
+  .img{
+   height: 145%;
+   object-fit:cover;
+   width:120vw !important;
+  }
+  .main{
+    background-color: wheat !important;
+    height: 100vh;
+
+    width: 120vw;
+  }
+.sml{
+ font-family: gilroy;
+font-weight: 100;
+ 
+ font-size: 20px;
+ margin-top:-140px;  margin-left: -125px
+}
+
+.mid {
+
+  @apply font-gilroy  text-gray-100 text-6xl font-extralightest absolute left-6 top-24;
+}
+
+
+  .wide{
+position: relative;
+left: 15%;
+border-radius: 20px;
+top: 40%;
+height: 60vh;
+border: none;
+width: 85vw;
+
+
+  }
+  .check{
+    height: 40px;
+    border: none;
+    position: relative;
+  
+   
+  }
+
+  .p1{
+font-size: 15px; font-weight: 200; left: 10px; 
+  }
+  .p2{
+   font-size: 55px; font-family: gilroy; 
+   left: 10px;  
+   font-weight: 200;
+   top: 25px;
+  }
+  .p3{
+   font-family: gilroy; 
+   left:80px;
+   top: -24px;
+   font-size: 15px;
+  
+  }
+  .p4{
+    font-family: gilroy;
+    left:80px; 
+    top: -24px;
+    font-size: 15px;
+  }
+
+.circle1{
+  position: absolute;
+  top: 95%;
+  left: 65%;
+}
+  .check1{
+    height: 40px;
+    border: none;
+    position: absolute;
+    top: 21%;
+  
+    width: 150px;
+ 
+  }
+  .p5{
+    font-size: 15px; font-weight: 200; left: 10px; top: 20px;
+      }
+      .p6{
+       font-size: 55px; font-family: gilroy;
+       left: 10px;  
+       font-weight: 200;
+       top: 35px;
+      }
+      .p7{
+       font-family: gilroy;
+       left:80px;
+       top: -14px;
+       font-size: 15px;
+      
+      }
+      .p8{
+        font-family: gilroy;
+        left:80px;
+        top: -13px;
+        font-size: 15px;
+      }
+    .p10{
+      font-family: gilroy;
+      font-size: 40px;
+      font-weight: 200;
+      top: 55%;
+      left: -132%;
+    }
+    .p9{
+      font-family: gilroy;
+      font-size: 15px;
+      left: -120%;
+      font-weight: 200;
+      top: 55%;
+    }
+  .check3{
+font-family: gilroy;
+position: relative;
+border: none;
+
+  }
+  .p12{
+    font-family: gilroy;
+    font-size: 40px;
+    font-weight: 200;
+  
+    z-index: 2;
+    top: 55%;
+
+    left: -65%;
+  }
+  .p11{
+    font-family: gilroy;
+    font-size: 15px;
+    left: -75%;
+    font-weight: 200;
+    top: 55%;
+  }
+  .chek5{
+    border: none;
+  }
+  .check4{
+    font-family: gilroy;
+    position: relative;
+    border: none;
+  }
+  .btn1{
+  position: absolute;
+top: 70%;
+left: -0%;
+  margin: 50px;
+  z-index: 10;
+  }
+  .hidden{
+display: none;
+  }
+
+
+
+    .left{
+      overflow: hidden;
+ position: absolute;
+ background-color: #E4E7EB !important;
+      width: 120vw !important;
+  top: 40%;
+  
+     }
+
+    
+     .right {
+background-color: #E4E7EB;
+      overflow: hidden;
+     
+      width: 140vw!important; /* Take up the full width of its parent */
+      position: absolute; /* Use relative positioning */
+      left: -10% !important;
+      margin-left: -50px !important;
+
+      top: 110%;
+    }
+    .card, .card1, .card2{
+      margin: 0;
+
+
+      padding: 0;
+    }
+   
+
+     .btn2{
+      font-weight: 400;
+      position: absolute;
+  top: 30% !important;
+left: 0% !important;
+opacity: .7 !important;
+
+     }
+  .bed{
+  
+  position: relative;
+  margin: -0px 0px;
+  top: 15% !important;
+  height: 70px;
+  width: 70px;
+  left: 8% !important;
+  }
+     .p13{
+      width: 100%;
+      z-index: 8;
+      left: -50%;
+      width: 100vw;
+      font-size: 40px!important;
+      margin: -100px -150px;
+  font-family: gilroy ;
+  font-weight: 300 !important;
+  
+    }
+    
+    
+  
+  .p14{
+    position: absolute;
+  width: 100%;
+  margin: 100px -150px;
+    top: 0%;
+    font-weight: 200;
+    font-family: gilroy !important;
+    width: 110vw;
+  }
+  
+  
+  .card2{
+    width: 80% !important;
+    left: 20%;
+    position: absolute;
+    box-shadow: none;
+  margin: 0;
+  padding: 0;
+  }
+  .card1{
+    left: 22.5% !important;
+    margin: 0;
+    box-shadow: none;
+    position: absolute;
+  padding: 0;
+  background-color: #E4E7EB;
+  width: 77% !important;
+  }
+  .card{
+    margin-bottom:10px ;
+    position: absolute;
+    box-shadow: none;
+    padding: 0;
+    background-color: #E4E7EB;
+    width: 75% !important; left:17% !important;
+  }
+  
+  
+}
+
+
+
+
+@media (max-width: 500px) {
+  .main2{
+height: 100vh;
+width: 100vw!important;
+background-color: #E4E7EB;
+    position: absolute;
+    top: 100%;
+
+
+  }
+  .right1{
+background-color: #E4E7EB;
+position: absolute;
+height: 80vh !important;
+  
+    overflow: hidden !important;
+
+width: 110vw !important;
+top: 80%;
+  }  
+  .left1{
+overflow: hidden;
+background-color:#E4E7EB !important;
+    width: 110vw !important;
+box-shadow: none;
+    position: absolute;
+left: 5%;
+  }
+  .card3{
+    box-shadow: none;
+position: absolute;
+background-color: #E4E7EB;
+z-index: 9;
+top: 13% !important;
+width: 81% !important;
+
+left: -5% !important;
+
+  }
+  .card4{
+    width: 88% !important;
+     left: -5% !important;
+     z-index: 9;
+    top: -55% !important;
+position: absolute;
+background-color: #E4E7EB;
+box-shadow: none;
+  }
+  .card5{
+    width: 95% !important;
+ z-index: 9;
+ box-shadow: none;
+left: 5% !important;
+    
+
+  }
+  .p18{
+    font-family: gilroy;
+    font-size: 25px !important;
+    
+  }
+  .p16{
+    font-size: 40px !important;
+    width: 100vw !important;
+    position: absolute;
+    left: 10%!important;
+    top: 20% !important;
+  }
+  .p17{
+    font-size: 20px !important;
+    width: 100vw !important;
+    position: absolute;
+    left: 10%!important;
+    top: 25% !important;
+  }
+.bed1{
+  height: 70px;
+  width: 80px;
+  position: absolute;
+left: 10% !important;
+top: 13% !important;
+}
+.btn3{
+
+height: 60px!important;
+width: 210px!important;
+top: 25% !important;
+left: 0%!important;
+}
+  .main3{
+  background-color: #E4E7EB !important;
+    position: relative;
+    width: 120vw !important;
+
+top: 155%;
+  }
+  .right3{
+    overflow: hidden !important;
+top: 80%;
+
+position: absolute;
+
+
+width: 140vw !important;
+left: -18% !important;
+margin: 5px!important;
+     position: absolute;
+  }
+  .left3{
+    width: 120vw !important;
+    overflow: hidden;
+    position: absolute;
+
+ 
+    height: 100vh !important;
+  }
+  .p20{
+    left: 0% !important;
+    top: 15% !important;
+    width: 100vw;
+    font-size: 60px !important;
+  }
+ .cup{
+  position: relative;
+  top: 5% !important;
+  height: 70px !important;
+  left: 8% !important;
+  width: 70px!important;
+ }
+
+.p20{
+  font-size: 40px !important;
+  position: absolute;
+  left: 7% !important;
+}
+
+.p21{
+  left: 7% !important;
+  top: 23% !important;
+}
+.btn4{
+  height: 60px!important;
+  width: 210px!important;
+  top: 30% !important;
+  left: -1%!important;
+}
+.card6{
+width: 100%;
+top: 17% !important;
+
+}
+.card7{
+  width: 100%;
+  top: -52% !important;
+
+}
+.card8{
+  width: 100%;
+
+}
+.main4{
+position: absolute;
+top: 640%;
+overflow: hidden!important;
+width: 115vw !important;
+}
+.left4{
+  width: 140vw !important;
+  left: -16%!important;
+  position: absolute;
+
+}
+.right4{
+  display: none;
+}
+.p24{
+  position: absolute;
+  margin-bottom: 10px !important;
+}
+.p25{
+  font-size: 15px!important;
+  font-family: gilroy;
+  position: absolute;
+  width: 120%!important;
+  left: 1% !important;
+  top: -1% !important;
+}
+.main5{
+  display: none!important;
+}
+p26{
+  display: block;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+.main1{
+  @apply h-full w-full relative  flex -z-50 
+}
+.left{
+
+  @apply h-full w-6/12 
+}
+.right{
+  @apply h-full w-6/12 
+}
+.bed{
+  @apply   border-2 border-light rounded-md text-black relative  font-gilroy top-48 left-40; font-size: 206px
+}
+.p13{
+  @apply relative text-6xl font-gilroy top-56 left-40
+}
+.p14{
+  @apply relative text-xl font-gilroy top-64  left-40
+}
+.btn2{
+    @apply   h-10 w-48  ml-10 border-black text-black border-2 text-xl relative top-64 mt-10 left-32 font-gilroy  rounded-full flex items-center justify-center ;
+}
+
+.card{
+  @apply  w-custom h-2/3  relative ml-8 rounded-xl bg-white ;  top: 135px;  box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1) ;
+
+}
+
+
+.card1{
+  height: 66.6%; 
+  width: 70%;
+z-index: 1000;
+left: 1%;
+top: -50%;
+position: relative;
+border-radius: 10px;
+background-color: white;
+box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+}
+
+
+.card2 {
+  height: 66.6%; 
+  width: 74%;
+z-index: 1000;
+bottom: 118%;
+position: relative;
+border-radius: 10px;
+background-color: white;
+box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+}
+
+.image{
+  @apply  h-4/5 w-full z-20 justify-center rounded-t-3xl
+} 
+.play{
+  @apply h-24 w-full rounded-b-3xl
+}
+.gol {
+  @apply w-16 h-16 rounded-full z-10 bg-custom flex items-center justify-center border m-4 border-white; /* Use border utility class to create a border */
+  /* Replace with your desired border color */
+  /* Add other styles for the circles */
+}
+.p15{
+  @apply relative left-24 font-gilroy -top-16
+}
+.main2{
+  @apply h-full w-full  relative flex
+}
+
+.left1{
+  @apply h-full w-6/12 
+}
+.right1{
+  @apply h-full w-6/12 
+}
+
+
+
+.card3{
+  @apply  w-custom left-16 border-black mt-10  h-2/3 top-32 relative ml-16 rounded-xl bg-white;  box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+
+}
+
+
+.card4{
+  @apply w-home left-16   h-2/3  relative -top-96 ml-12  rounded-xl bg-white ;  box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+}
+ 
+
+  .card5 {
+    @apply w-homes left-24 h-2/3 relative -top-full -mt-40 rounded-3xl bg-white   ;
+    /* Add a box shadow for the bottom */
+    box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1); /* Adjust the values to control the shadow appearance */
+  }
+
+  .bed1{
+    @apply h-20 border-2 border-light rounded-md text-black relative  font-gilroy top-48 left-20
+  }
+
+  .p16{
+    @apply relative text-6xl font-gilroy top-56 left-20
+  }
+  .p17{
+    @apply relative text-xl font-gilroy top-64  left-20
+  }
+  .imagess{
+    @apply  h-4/5 w-full z-20 justify-center rounded-t-3xl
+  } 
+
+  .play1{
+    @apply h-24 w-full rounded-b-3xl
+  }
+  .gol1{
+    @apply w-16 h-16 rounded-full z-10 bg-slate-300 flex items-center justify-center border m-4 border-white; /* Use border utility class to create a border */
+    /* Replace with your desired border color */
+    /* Add other styles for the circles */
+  }
+  .p18{
+    @apply relative text-3xl left-24 font-gilroy -top-20
+  }
+  .p19{
+    @apply relative  left-24 font-gilroy -top-20
+  }
+  .btn3{
+    @apply   h-10 w-48  ml-10 border-black text-black border-2 text-xl relative top-64 mt-10 left-10 font-gilroy  rounded-full flex items-center justify-center ;
+
+  }
+  .main3{
+@apply h-full w-full flex 
+  }
+  .left3{
+    @apply h-full w-6/12 
+  }
+  .right3{
+    @apply h-full w-6/12  
+  }
+  .cup{
+ 
+      @apply border-black border w-16 h-16 relative top-32 left-20;
+    
+    
+  }
+  .p20{
+    @apply relative text-6xl font-gilroy top-56 left-20
+  }
+  .p21{
+    @apply relative text-xl font-gilroy top-64  left-20
+  }
+  .btn4{
+    @apply   h-10 w-48  ml-10 border-black text-black border-2 text-xl relative top-64 mt-10 left-10 font-gilroy  rounded-full flex items-center justify-center ;
+
+  }
+  .card6{
+    @apply  w-custom left-16 border-black mt-5  h-2/3 top-32
+    relative ml-16 rounded-xl bg-white;  box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+  
+  }
+ 
+  .card7{
+    @apply w-home left-16   h-2/3  relative -top-96 ml-12  rounded-xl bg-white ;  box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+  }
+   
+  
+  .card8 {
+    @apply w-homes left-24  z-10 h-2/3 relative top-cus rounded-3xl bg-white   ;
+    /* Add a box shadow for the bottom */
+    box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1); /* Adjust the values to control the shadow appearance */
+  }
+  .imap{
+    @apply  h-4/5 w-full z-20 justify-center rounded-t-3xl
+  } 
+  .play2{
+    @apply h-24 w-full rounded-b-3xl
+  }
+  .gol2{
+    @apply w-16 h-16 rounded-full z-10 bg-slate-300 flex items-center justify-center border m-4 border-white; /* Use border utility class to create a border */
+    /* Replace with your desired border color */
+    /* Add other styles for the circles */
+  }
+  .p22{
+    @apply relative text-3xl left-24 font-gilroy -top-20
+  }
+  .p23{
+    @apply relative  left-24 font-gilroy -top-20
+  }
+  .main4{
+    @apply h-full w-full flex bg-slate-300
+      }
+     .right4{
+      @apply h-full w-6/12
+     }
+     .left4{
+      @apply h-full w-6/12  
+     }
+     .card9{
+      @apply w-3/4 left-24  z-10 h-2/3 relative top-32 rounded-3xl bg-white ;   
+    /* Add a box shadow for the bottom */
+    box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.2);
+     }
+    
+     .wifi{
+      @apply  h-2/3 w-full  relative  z-20 justify-center rounded-t-3xl
+    } 
+    .p24{
+      @apply font-gilroy text-4xl relative top-5 left-5
+    }
+    .p25{
+      @apply font-gilroy  relative top-3 left-5
+    }
+    .p26{
+      @apply relative text-4xl font-gilroy top-10 -left-36
+    }
+    .card10{
+      @apply h-1/4 w-2/3 relative bg-white  top-24 rounded-3xl
+    }
+    .card11{
+     @apply h-1/3  w-2/6 bg-white relative top-32 rounded-3xl  
+    }
+    .card12{
+      @apply h-1/3 flex w-2/6 bg-white relative left-72 -top-32 mt-2 rounded-3xl
+     }
+     .celeb{
+      @apply h-10 w-10 rounded-md text-2xl border border-black relative  left-10 top-5
+     }
+     .p27{
+      @apply font-gilroy text-2xl relative left-28 -top-5
+     }
+     .p28{
+      @apply  font-gilroy  relative left-28 
+     }
+     .bill{
+      @apply text-6xl relative top-5 left-8   border border-black
+     }
+     .p29{
+      @apply text-2xl font-gilroy relative top-10 left-7
+     }
+     .p30{
+      @apply font-gilroy relative top-14 left-7
+     }
+
+     .call{
+      @apply text-6xl relative top-5 left-8   border border-black
+
+     }
+     .p31{
+      @apply text-2xl  font-gilroy relative top-24 -left-10
+     }
+     .p32{
+      @apply font-gilroy z-10 absolute top-36 left-6
+    }
+    
+    .main5{
+@apply h-full w-full bg-fuchsia-600 relative flex
+    }
+   
+ 
+
+   
+    .nine{
+      @apply bg-white w-1/3  h-full
+        
+      
+    }
+    .eight{
+      @apply bg-white h-full w-1/3
+    }
+    .seven{
+      @apply bg-white w-1/3 h-full
+    }
+
+    .card13{
+      @apply h-2/3 w-bike bg-white absolute  rounded-xl top-5 mt-32 ml-24;  box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+    }
+        .card15{
+          @apply h-2/3 w-one  bg-white absolute rounded-xl mt-32 ml-16;  box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+        }
+    
+        .card14{
+          @apply h-2/3 w-car bg-white absolute  rounded-xl   top-3 mt-32 ml-20;  box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+        }
+      
+            .card15{
+              @apply h-2/3 w-one  bg-white absolute rounded-xl mt-32 ml-16; box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+            }
+        
+
+            .card16{
+              @apply h-2/3 w-car bg-custom absolute  rounded-xl   top-3 mt-32 ml-24; box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+            }
+            .card17{
+              @apply h-2/3 w-bike bg-custom absolute  rounded-xl top-5 mt-32 ml-28; box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+            }
+                .card18{
+                  @apply h-2/3 w-one  bg-custom absolute rounded-xl mt-32 ml-20; box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+                }
+                
+                .card19{
+                  @apply h-2/3 w-car bg-white absolute  rounded-xl   top-3 mt-32  ml-24; box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+                }
+                .card20{
+                  @apply h-2/3 w-bike bg-white absolute  rounded-xl top-5 mt-32 ml-28; box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+                }
+                    .card21{
+                      @apply h-2/3 w-one  bg-white absolute rounded-xl mt-32 ml-20; box-shadow: 10px 44px 150px rgba(0, 0, 0, 0.1);
+                    }
+
+    
+                    .room{
+                    @apply rounded-lg w-ones mt-3 ml-2
+                    }
+                    
+                    .room1{
+                      @apply rounded-lg w-ones mt-3 ml-2
+                      }
+                      
+                    .room2{
+                      @apply rounded-lg w-ones mt-3 ml-2 
+                      }
+                      .prices{
+                        @apply font-gilroy h-14 w-32  text-black bg-white absolute rounded-lg top-8 left-6
+                      }
+                      .p33{
+                        @apply text-4xl font-gilroy absolute top-64 left-4
+                      }
+                      .p35{
+                        @apply text-4xl font-gilroy absolute top-64 left-4 text-white
+                      }
+                      .p37{
+                        @apply text-4xl font-gilroy  absolute top-64 left-4
+                      }
+                      .p34{
+                        @apply text-black font-gilroy absolute top-80 left-5
+                      }
+                      .p36{
+                        @apply text-white font-gilroy absolute top-80 left-5
+                      }
+                      .p38{
+                        @apply text-black font-gilroy absolute top-80 left-5
+                      }
+                      .book{
+                        @apply bg-custom text-white rounded-xl h-14 w-32 absolute top-96 left-5
+                      }
+                      .booki{
+                        @apply bg-yellow-300 text-black rounded-xl h-14 w-32 absolute top-96 left-5
+                      }
+                      .Rim{
+                        @apply font-gilroy text-6xl absolute top-6 left-10
+                      }
+                    
+                      @layer base {
+                        .rating-circle {
+                          width: 5rem;
+                          height: 5rem;
+                          border: 2px solid navy;
+                          border-radius: 50%;
+                          position: relative;
+                          overflow: hidden;
+                        }
+                      
+                        .yellow-border {
+                          position: absolute;
+                          top: 2px;
+                          left: 2px;
+                          width: 50%;
+                          height: calc(100% - 4px);
+                          border: 2px solid yellow;
+                          border-right: none;
+                          border-radius: 50% 0 0 50%;
+                        }
+                       
+                      }
+                      
